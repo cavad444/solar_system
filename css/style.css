@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 75%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.sun{
+    animation: rotate-sun 25s linear infinite;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    z-index:-1;
+    
+}
+
+.saturn{
+    animation: rotate-saturn 25s linear infinite;
+    width: 250px;
+    height: 150px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.jupiter{
+    animation: rotate-jupiter 20s linear infinite;
+    width: 290px;
+    height: 290px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+    
+}
+.mars{
+    animation: rotate-mars 18s linear infinite;
+    width: 110px;
+    height: 110px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+.earth{
+    animation: rotate-earth 15s linear infinite;
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+.venus{
+    animation: rotate-venus 13s linear infinite;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+.mercury{
+    animation: rotate-mercury 10s linear infinite;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+
+@keyframes rotate-sun{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+
+}
+
+@keyframes rotate-saturn {
+    0% {
+        transform: rotateY(0) translateX(0);
+        }
+    25%{
+        transform: translateY(100%) translateX(-200%)
+    }
+    
+    50%{
+        transform: translateY(-50%) translateX(-400%);
+    }
+    75%{
+        transform: translateY(-200%) translateX(-200%)
+    }
+      100% {
+        transform:translateY(0) translateX(0);
+    }
+}
+
+@keyframes rotate-earth {
+    0% {
+        transform: rotateY(0) translateX(0) translateY(0) ;
+        }
+    25%{
+        transform: translateY(120%) translateX(-430%) rotate(90deg);
+    }
+    
+    50%{
+        transform: translateY(-60%) translateX(-860%)  rotate(180deg);
+    }
+    75%{
+        transform: translateY(-240%) translateX(-430%)  rotate(270deg)
+    }
+      100% {
+        transform:translateY(0) translateX(0) rotate(360deg) ;
+        
+    }
+}
+
+
+
+@keyframes rotate-venus {
+    0% {
+        transform: rotateY(0) translateX(0);
+        }
+    25%{
+        transform: translateY(250%) translateX(-500%) rotate(90deg);
+    }
+    
+    50%{
+        transform: translateY(-50%) translateX(-1200%) rotate(180deg);
+    }
+    75%{
+        transform: translateY(-250%) translateX(-500%) rotate(270deg)
+    }
+      100% {
+        transform:translateY(0) translateX(0) rotate(360deg);
+    }
+}
+
+@keyframes rotate-mars {
+    0% {
+        transform: rotateY(0) translateX(0);
+        }
+    25%{
+        transform: translateY(150%) translateX(-500%) rotate(90deg);
+    }
+    
+    50%{
+        transform: translateY(-50%) translateX(-1000%) rotate(180deg);
+    }
+    75%{
+        transform: translateY(-300%) translateX(-500%) rotate(270deg);
+    }
+      100% {
+        transform:translateY(0) translateX(0) rotate(360deg);
+    }
+}
+
+@keyframes rotate-mercury {
+    0% {
+        transform: rotateY(0) translateX(0);
+        }
+    25%{
+        transform: translateY(400%) translateX(-940%) rotate(90deg);
+    }
+    
+    50%{
+        transform: translateY(0%) translateX(-2200%) rotate(180deg);
+    }
+    75%{
+        transform: translateY(-500%) translateX(-940%) rotate(270deg);
+    }
+      100% {
+        transform:translateY(0) translateX(0) rotate(360deg);
+    }
+}
+
+@keyframes rotate-jupiter {
+    0% {
+        transform: rotateY(0) translateX(-25%) translateY(-30%);
+        }
+    25%{
+        transform: translateY(25%) translateX(-150%) rotate(90deg);
+    }
+    
+    50%{
+        transform: translateY(-50%) translateX(-300%) rotate(180deg);
+    }
+    75%{
+        transform: translateY(-150%) translateX(-150%) rotate(270deg);
+    }
+      100% {
+        transform:translateY(-30%) translateX(-25%) rotate(360deg);
+    }
+}
